@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.wearable.view.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jake.heartbeat04.ViewSensorsActivity"
+    tools:deviceIds="wear">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_box="all">
+
+        <ToggleButton
+            android:id="@+id/hr_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:checked="true"
+            android:textOn="Measuring HR..."
+            android:textOff="HR off"
+            android:onClick="hrButtonClicked"/>
+
+        <ToggleButton
+            android:id="@+id/acc_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:checked="true"
+            android:textOn="Measuring Acc..."
+            android:textOff="Acc off"
+            android:onClick="accButtonClicked"/>
+
+    </LinearLayout>
+
+
+</android.support.wearable.view.BoxInsetLayout>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Heartbeat 0.4</string>
+    <string-array name="main_menu_options">
+        <item>Getting started</item>
+        <item>Record data</item>
+        <item>View sensors</item>
+        <item>Settings</item>
+    </string-array>
+    <string name="title_activity_view_sensors">ViewSensorsActivity</string>
+    <string name="title_activity_file_name">FileNameActivity</string>
+    <string name="enter_file_name">Your data will be saved in a CSV file. Enter file name below:</string>
+    <string name="file_name_hint">File name</string>
+    <string name="record_data">Record data</string>
+    <string name="title_activity_record_data">RecordDataActivity</string>
+</resources>
