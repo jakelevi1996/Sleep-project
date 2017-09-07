@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jake.heartbeat04">
+
+    <uses-feature android:name="android.hardware.type.watch" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.BODY_SENSORS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.DeviceDefault">
+        <uses-library
+            android:name="com.google.android.wearable"
+            android:required="false" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.DeviceDefault.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ViewSensorsActivity"
+            android:label="@string/title_activity_view_sensors"
+            android:theme="@android:style/Theme.DeviceDefault.Light"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".FileNameActivity"
+            android:label="@string/title_activity_file_name"
+            android:theme="@android:style/Theme.DeviceDefault.Light"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".RecordDataActivity"
+            android:label="@string/title_activity_record_data"
+            android:theme="@android:style/Theme.DeviceDefault.Light"
+            android:parentActivityName=".FileNameActivity"/>
+    </application>
+
+</manifest>
