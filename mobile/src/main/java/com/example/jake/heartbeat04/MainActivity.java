@@ -27,8 +27,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Intent intent = new Intent(this, MessageListenerService.class);
-        startService(intent);
+        startService(new Intent(this, MessageListenerService.class));
 
 
         ListView mainMenuListView = (ListView) findViewById(R.id.main_menu_list);
@@ -39,17 +38,18 @@ public class MainActivity extends AppCompatActivity {
                                             View v,
                                             int position,
                                             long id) {
-                        Intent intent;
                         switch (position) {
                             case GETTING_STARTED:
+                                startActivity(new Intent(MainActivity.this, FutureReleaseActivity.class));
                                 break;
                             case VIEW_DATA:
-                                intent = new Intent(MainActivity.this, ListOfFilesActivity.class);
-                                startActivity(intent);
+                                startActivity(new Intent(MainActivity.this, ListOfFilesActivity.class));
                                 break;
                             case VIEW_GRAPHS:
+                                startActivity(new Intent(MainActivity.this, FutureReleaseActivity.class));
                                 break;
                             case SETTINGS:
+                                startActivity(new Intent(MainActivity.this, FutureReleaseActivity.class));
                                 break;
                             case 4:
                                 startService(new Intent(MainActivity.this, MessageListenerService.class));
