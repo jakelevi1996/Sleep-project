@@ -30,18 +30,24 @@
         <activity
             android:name=".ViewSensorsActivity"
             android:label="@string/title_activity_view_sensors"
-            android:theme="@android:style/Theme.DeviceDefault.Light"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".MainActivity"
+            android:theme="@android:style/Theme.DeviceDefault.Light" />
         <activity
             android:name=".FileNameActivity"
             android:label="@string/title_activity_file_name"
-            android:theme="@android:style/Theme.DeviceDefault.Light"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity"
+            android:theme="@android:style/Theme.DeviceDefault.Light" />
         <activity
             android:name=".RecordDataActivity"
             android:label="@string/title_activity_record_data"
-            android:theme="@android:style/Theme.DeviceDefault.Light"
-            android:parentActivityName=".FileNameActivity"/>
+            android:parentActivityName=".FileNameActivity"
+            android:theme="@android:style/Theme.DeviceDefault.Light" />
+        <activity
+            android:name=".FutureReleaseActivity"
+            android:label="@string/title_activity_future_release"
+            android:parentActivityName=".MainActivity"
+            android:theme="@android:style/Theme.DeviceDefault.Light">
+        </activity>
     </application>
 
 </manifest>
