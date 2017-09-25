@@ -41,19 +41,18 @@ public class MainActivity extends WearableActivity {
                                             View v,
                                             int position,
                                             long id) {
-                        Intent intent;
                         switch (position) {
                             case GETTING_STARTED:
+                                startActivity(new Intent(MainActivity.this, FutureReleaseActivity.class));
                                 break;
                             case RECORD_DATA:
-                                intent = new Intent(MainActivity.this, FileNameActivity.class);
-                                startActivity(intent);
+                                startActivity(new Intent(MainActivity.this, FileNameActivity.class));
                                 break;
                             case VIEW_SENSORS:
-                                intent = new Intent(MainActivity.this, ViewSensorsActivity.class);
-                                startActivity(intent);
+                                startActivity(new Intent(MainActivity.this, ViewSensorsActivity.class));
                                 break;
                             case SETTINGS:
+                                startActivity(new Intent(MainActivity.this, FutureReleaseActivity.class));
                                 break;
                         }
 
