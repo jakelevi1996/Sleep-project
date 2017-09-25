@@ -9,4 +9,5 @@
         <item>Stop service</item>
     </string-array>
     <string name="list_of_saved_files_activity">Saved files</string>
+    <string name="were_sorry">We\'re sorry, this feature has yet to be implemented. We\'re working on getting this fixed. Check back in a future release!</string>
 </resources>
